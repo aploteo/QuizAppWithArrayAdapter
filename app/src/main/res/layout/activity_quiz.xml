@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.quizappwitharrayadapter.QuizActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttons"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_grade"
+            style="@style/buttons_land"
+            android:onClick="gradeQuiz"
+            android:text="@string/grade" />
+
+        <Button
+            android:id="@+id/button_reset"
+            style="@style/buttons_land"
+            android:onClick="resetQuiz"
+            android:text="@string/reset" />
+
+        <Button
+            android:id="@+id/button_results"
+            style="@style/buttons_land"
+            android:onClick="goToResults"
+            android:text="@string/results" />
+
+    </LinearLayout>
+
+</RelativeLayout>

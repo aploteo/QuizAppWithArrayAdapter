@@ -1,0 +1,68 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_height="0dp"
+    android:layout_marginLeft="@dimen/scrollview_margins"
+    android:layout_marginRight="@dimen/scrollview_margins"
+    android:layout_weight="8"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        style="@style/linear_layout"
+        android:id="@+id/container">
+
+        <TextView
+            style="@style/question_number"
+            android:id="@+id/question_number"
+            tools:text="@string/one" />
+
+        <TextView
+            style="@style/title"
+            android:id="@+id/title"
+            tools:text="@string/q1_title" />
+
+        <ImageView
+            style="@style/image"
+            android:contentDescription="@string/content_description"
+            android:id="@+id/image" />
+
+        <TextView
+            style="@style/intro"
+            android:id="@+id/intro"
+            tools:text="@string/q1_intro" />
+
+        <TextView
+            style="@style/question"
+            android:id="@+id/question"
+            tools:text="@string/q1_question" />
+
+        <RadioGroup
+            style="@style/radio"
+            android:id="@+id/radio_group">
+
+            <RadioButton
+                style="@style/hypothesis"
+                android:id="@+id/hypothesis1"
+                tools:text="@string/q1_hyp1" />
+
+            <RadioButton
+                style="@style/hypothesis"
+                android:id="@+id/hypothesis2"
+                tools:text="@string/q1_hyp2" />
+
+            <RadioButton
+                style="@style/hypothesis"
+                android:id="@+id/hypothesis3"
+                tools:text="@string/q1_hyp3" />
+
+            <RadioButton
+                style="@style/hypothesis"
+                android:id="@+id/hypothesis4"
+                tools:text="@string/q1_hyp4" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>
